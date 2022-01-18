@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="nameApp">
+      <h1>Card validator</h1>
+    </div>
+    <div class="welcome">
+      <p>Bienvenido al validador de tarjetas de credito.</p>
+    </div>
+    <div id="entertc">
+      <p>Ingrese el numero de tarjeta de credito a validar.</p>
+      <label for="creditCard"> Tarjeta de Crédito</label><br>
+      <input type="number" id="numberTc" name="creditCard" min="16" max="16">
+    </div>
+    <button id="buttonTc" class="button">Validar</button>
+    <h1 id="contenedorTarjeta"></h1>
+  </div>
+
+
+  <header></header>
+  <main></main>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
