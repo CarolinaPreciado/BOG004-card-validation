@@ -5,9 +5,14 @@ let creditCardNumber = document.getElementById("numberTc");
 let buttonTc = document.getElementById("buttonTc");
 let contenedorTarjeta = document.getElementById("contenedorTarjeta");
 
+
+
 buttonTc.addEventListener("click", () => {
-contenedorTarjeta.innerText = "La tarjeta a validar es" + numberTc.value;
-validator(numberTc.value);
+    let resultado = validator(numberTc.value);
+contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
+
+console.log("resultado",resultado);
+
 }
 );
 
