@@ -29,5 +29,4 @@ function isValid() {
     }
 };
 
-
 export default validator;
