@@ -15,15 +15,22 @@
     <div class="welcome">
       <p>Bienvenido al validador de tarjetas de credito.</p>
     </div>
-    <div id="entertc">
+    <div id="entertc" class="proceso">
       <p>Ingrese el numero de tarjeta de credito a validar.</p>
-      <label for="creditCard"> Tarjeta de Crédito</label><br>
+      <label for="creditCard" class="labels"> Tarjeta de Crédito</label><br>
       <input type="number" id="numberTc" name="creditCard" min="16" max="16">
+    <button id="buttonTc" class="button1">Validar</button>
+    <button id="Borrar" class="button2">Borrar</button>
     </div>
-    <button id="buttonTc" class="button">Validar</button>
-    <h1 id="contenedorTarjeta"></h1>
-  </div>
+    <div>
+      <h1 class="avisos" id="contenedorTarjeta"></h1>
+    </div>
 
+    <div>
+      <p class="avisos" id="contenedorEvaluarnumero"></p>
+    </div>
+
+  </div>
 
   <header></header>
   <main></main>
