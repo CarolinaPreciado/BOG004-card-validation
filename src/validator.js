@@ -1,14 +1,15 @@
-const validator = (valorDeVariable) => {
-    console.log(valorDeVariable)
-    console.log(typeof(valorDeVariable));
+const validator = {
+
+    maskify: function(valorDeVariable){
     let lastFourDigits = valorDeVariable[12]+valorDeVariable[13]+valorDeVariable[14]+valorDeVariable[15];
     let maskedNumbers = '############';
     let finalMasking = maskedNumbers + lastFourDigits;
     console.log(finalMasking);
     return finalMasking;
-};
+    },
 
-function isValid() {
+    isValid: function(numberTc){
+        let valid = 0;
     let validateCard = Array.from(numberTc);
     let suma =0;
     for (let i=0; i<validateCard.length; i++) {
@@ -22,11 +23,28 @@ function isValid() {
     }
     let resultado = suma % 10;
       if (resultado === 0){
+        let valid = "La tarjeta es valida";
         console.log("La tarjeta es valida");
       }
     else {
-        console.log("La tarjeta es invalida");
+     let valid = "La tarjeta es invalida";
+     console.log("La tarjeta es invalida");
+     console.log(valid);
+    }
+    return valid;
     }
 };
 
 export default validator;
+
+
+/* Creacion de objeto con nombres y valores y declaracion de funcion dentro de un objeto
+var casa = {
+    numeroDePuertas: 4,
+    numeroDeEdificio: 2,
+    numeroDePiso: 3,
+    numeroDeCuartos: 2,
+    abrirPuertaPrincipal: function(){
+        console.log("La puerta principal esta abierta y el numero de piso es "+this.numeroDePiso)
+    }
+};*/

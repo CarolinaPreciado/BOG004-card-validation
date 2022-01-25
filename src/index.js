@@ -1,6 +1,6 @@
 import validator from './validator.js';
 
-//Evento preguntar tarjeta
+//Declarando variables para enmascarar
 let creditCardNumber = document.getElementById("numberTc");
 let buttonTc = document.getElementById("buttonTc");
 let contenedorTarjeta = document.getElementById("contenedorTarjeta");
@@ -21,13 +21,16 @@ function evaluaNumero(numberTc) {
     }
 }
 
-//Guarda la variable del numero de tarjeta en el click y realiza la validación en el click
+//Evento de emascaramiento, toma la variable del numero de tarjeta en el click y enmascara los primeros digitos
 buttonTc.addEventListener("click", () => {
-    let resultado = validator(numberTc.value);
+    let resultado = validator.maskify(numberTc.value);
+     let textoValidacion = validator.isValid(numberTc.value);
     contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
+    contenedorEvaluarTarjeta.innerText = "El resultado es " + textoValidacion;
     console.log("resultado", resultado);
 }
 );
+
 
 
 
