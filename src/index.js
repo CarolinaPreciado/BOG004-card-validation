@@ -5,6 +5,16 @@ let creditCardNumber = document.getElementById("numberTc");
 let buttonTc = document.getElementById("buttonTc");
 let contenedorTarjeta = document.getElementById("contenedorTarjeta");
 
+//Declaracion de variables para crear evento de boton empresa
+const companyButton = document.getElementById("buttonE");
+const company = document.getElementById("empresaName");
+const containerCompany = document.getElementById("containerCompany");
+
+companyButton.addEventListener("click", () => {
+    containerCompany.innerText = "Empresa: " + company.value;
+}
+);
+
 //Función que evalua si el input del usuario es un numero de 16 caracteres. Informa al usuario qué debe hacer.
 function evaluaNumero(numberTc) {
     let evaluateNumber = isNan(numberTc.value);

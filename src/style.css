@@ -10,19 +10,36 @@
 }
 
 .nameApp{
-    height: 97px;
-    color: #000000;
+    height: 98px;
     background-color: #89B0AE;
     overflow: visible;
     text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+p{
+   margin-block-start: 0em;
+   margin-block-end: 0em;
+}
+
+h2{
+  font-weight: normal;
+  font-size: 40px;
+  justify-content: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+
 }
 
 .welcome{
     font-size: 30px;
     font-weight: medium;
     text-align: center;
-    margin-bottom: 72px;
-    margin-bottom: 104px;
+    padding-top: 78px;
+    padding-bottom: 104px;
+    
 }
 
 .proceso{
@@ -41,6 +58,7 @@
     background-color: #FFD6BA;
     cursor: pointer;
     font-size: 16px;
+
    }
 
 .button2{
@@ -52,7 +70,12 @@
     background-color: #BEE3DB;
     cursor: pointer;
     font-size: 16px;
-   }
+    }
+
+.centrar_contenido{
+    text-align: center;
+}
+
 
 .labels{
     font-size: 18px;
@@ -66,9 +89,12 @@
     text-align: center;
 }
 
-#numberTc{
+.inputGris{
     width: 300px;
     height: 40px;
+    background-color: #C4C4C432;
+    border-color: transparent;
+
 }
 
 #contenedorTarjeta{

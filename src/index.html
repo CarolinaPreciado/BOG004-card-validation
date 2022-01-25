@@ -10,18 +10,36 @@
 <body>
   <div class="container">
     <div class="nameApp">
-      <h1>Card validator</h1>
+      <h2 style="background-color: #89B0AE; color: #ffffff">Card validator</h2>
     </div>
+
     <div class="welcome">
       <p>Bienvenido al validador de tarjetas de credito.</p>
     </div>
+
+    <div id="empresa" class="proceso">
+      <p>Indiquenos la empresa a la que pertenece:</p>
+      <label for="empresaApp" class="labels"> Empresa</label><br>
+      <input type="text" id="empresaName" class="inputGris" name="empresaApp" placeholder="Nombre de empresa">
+    </div>
+
+    <div class="centrar_contenido">
+      <button id="buttonE" class="button1">Enviar</button>
+      <h1 id="containerCompany"></h1>
+    </div>
+
     <div id="entertc" class="proceso">
       <p>Ingrese el numero de tarjeta de credito a validar.</p>
       <label for="creditCard" class="labels"> Tarjeta de Crédito</label><br>
-      <input type="number" id="numberTc" name="creditCard" min="16" max="16" placeholder="Numero de tarjeta de credito">
+      <input type="number" id="numberTc" class="inputGris" name="creditCard" min="16" max="16"
+        placeholder="Numero de tarjeta de credito">
+    </div>
+
+    <div class="centrar_contenido">
       <button id="buttonTc" class="button1">Validar</button>
       <button id="Borrar" class="button2">Borrar</button>
     </div>
+
     <div>
       <h1 class="avisos" id="contenedorTarjeta"></h1>
     </div>
@@ -29,6 +47,7 @@
     <div>
       <p class="avisos" id="contenedorEvaluarnumero"></p>
     </div>
+
     <div>
       <p class="avisos" id="contenedorEvaluarTarjeta"></p>
     </div>
