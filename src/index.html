@@ -20,6 +20,7 @@
     <div id="empresa" class="proceso">
       <p>Indiquenos la empresa a la que pertenece:</p>
       <label for="empresaApp" class="labels"> Empresa</label><br>
+      <img class="iconos" src="iconos/company.png" />
       <input type="text" id="empresaName" class="inputGris" name="empresaApp" placeholder="Nombre de empresa">
     </div>
 
@@ -29,15 +30,17 @@
     </div>
 
     <div id="entertc" class="proceso">
-      <p>Ingrese el numero de tarjeta de credito a validar.</p>
+      <p>Ingrese el numero de tarjeta de credito a validar:</p>
       <label for="creditCard" class="labels"> Tarjeta de Crédito</label><br>
+      <img class="iconos" src="iconos/debit-card.png" />
       <input type="number" id="numberTc" class="inputGris" name="creditCard" min="16" max="16"
         placeholder="Numero de tarjeta de credito">
     </div>
 
     <div class="centrar_contenido">
       <button id="buttonTc" class="button1">Validar</button>
-      <button id="Borrar" class="button2">Borrar</button>
+      <button id="Borrar" class="button2">
+      <img style="height: 20px; width: 20px; padding-right: 8px;" class="iconos" src="iconos/delete.png" />Borrar</button>
     </div>
 
     <div>
@@ -48,8 +51,15 @@
       <p class="avisos" id="contenedorEvaluarnumero"></p>
     </div>
 
-    <div>
+    <div class="centrar_contenido">
+      <label for="resultadoValidator" class="labels">Resultado</label><br>
       <p class="avisos" id="contenedorEvaluarTarjeta"></p>
+    </div>
+
+    <div class="centrar_contenido">
+      <button id="buttonValidate2" class="button1">Validar De Nuevo</button>
+      <button id="buttonValidateNew" class="button2">Validar Otra TC</button><br>
+      <button id="buttonInicio" class="button3">Inicio</button>
     </div>
 
   </div>

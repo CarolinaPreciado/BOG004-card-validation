@@ -30,7 +30,7 @@ const validator = {
      let valid = "La tarjeta es invalida";
      console.log("La tarjeta es invalida");
      console.log(valid);
-    }
+s    }
     return valid;
     }
 };

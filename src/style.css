@@ -1,12 +1,11 @@
 *{ 
     font-family: 'Montserrat','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #FAF9F9;
   }
 
 .container{
     height: 948px;
     width: 1680px;
-
+    background-color: #FAF9F9;
 }
 
 .nameApp{
@@ -16,7 +15,11 @@
     text-align: center;
     display: flex;
     justify-content: center;
+}
 
+.iconos{
+    height: 30px;
+    width: 30px;
 }
 
 p{
@@ -30,7 +33,6 @@ h2{
   justify-content: center;
   margin-block-start: 0em;
   margin-block-end: 0em;
-
 }
 
 .welcome{
@@ -38,8 +40,6 @@ h2{
     font-weight: medium;
     text-align: center;
     padding-top: 78px;
-    padding-bottom: 104px;
-    
 }
 
 .proceso{
@@ -47,6 +47,7 @@ h2{
     font-weight: regular;
     text-align: center;
     align-items: center;
+    padding-top: 104px; 
 }
 
 .button1{
@@ -58,7 +59,6 @@ h2{
     background-color: #FFD6BA;
     cursor: pointer;
     font-size: 16px;
-
    }
 
 .button2{
@@ -76,11 +76,13 @@ h2{
     text-align: center;
 }
 
-
 .labels{
     font-size: 18px;
     font-weight: semiBold;
     text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
 }
 
 .avisos{
@@ -94,7 +96,6 @@ h2{
     height: 40px;
     background-color: #C4C4C432;
     border-color: transparent;
-
 }
 
 #contenedorTarjeta{
