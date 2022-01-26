@@ -34,9 +34,11 @@ function evaluaNumero(numberTc) {
 //Evento de emascaramiento, toma la variable del numero de tarjeta en el click y enmascara los primeros digitos
 buttonTc.addEventListener("click", () => {
     let resultado = validator.maskify(numberTc.value);
-     let textoValidacion = validator.isValid(numberTc.value);
+    let isValid = validator.isValid(numberTc.value);
+    let textoValidacion = isValid ? "Tarjeta Valida" : "Tarjeta Invalida";
+
     contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
-    contenedorEvaluarTarjeta.innerText = "El resultado es " + textoValidacion;
+    contenedorEvaluarTarjeta.innerText = textoValidacion;
     console.log("resultado", resultado);
 }
 );

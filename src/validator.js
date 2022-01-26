@@ -9,7 +9,7 @@ const validator = {
     },
 
     isValid: function(numberTc){
-        let valid = 0;
+    let valid = false;
     let validateCard = Array.from(numberTc);
     let suma =0;
     for (let i=0; i<validateCard.length; i++) {
@@ -23,14 +23,14 @@ const validator = {
     }
     let resultado = suma % 10;
       if (resultado === 0){
-        let valid = "La tarjeta es valida";
+        valid = true;
         console.log("La tarjeta es valida");
       }
     else {
-     let valid = "La tarjeta es invalida";
+     valid = false;
      console.log("La tarjeta es invalida");
      console.log(valid);
-s    }
+    }
     return valid;
     }
 };
