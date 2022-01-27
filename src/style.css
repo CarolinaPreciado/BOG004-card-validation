@@ -21,11 +21,6 @@ body{
     justify-content: center;
 }
 
-.stripe{
-    height: 98px;
-    width: auto;
-}
-
 .iconos{
     height: 30px;
     width: 30px;
@@ -42,7 +37,7 @@ h2{
   justify-content: center;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  margin-top: 14px;
+  margin-top: 22px;
   margin-bottom: 18px;
 }
 
