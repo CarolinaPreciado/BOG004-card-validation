@@ -12,6 +12,8 @@ const containerCompany = document.getElementById("containerCompany");
 
 companyButton.addEventListener("click", () => {
     containerCompany.innerText = "Empresa: " + company.value;
+    document.getElementById("primeraPagina").style.display = "none";
+    document.getElementById("segundaPagina").style.display = "block";
 }
 );
 
@@ -35,16 +37,12 @@ function evaluaNumero(numberTc) {
 buttonTc.addEventListener("click", () => {
     let resultado = validator.maskify(numberTc.value);
     let isValid = validator.isValid(numberTc.value);
-    let textoValidacion = isValid ? "Tarjeta Valida" : "Tarjeta Invalida";
+    let textoValidacion = isValid ? "La tarjeta es Valida" : "La tarjeta es Invalida";
 
     contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
     contenedorEvaluarTarjeta.innerText = textoValidacion;
     console.log("resultado", resultado);
+        document.getElementById("segundaPagina").style.display = "none";
+        document.getElementById("terceraPagina").style.display = "block";
 }
 );
-
-
-
-
-
-

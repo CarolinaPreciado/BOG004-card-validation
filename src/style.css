@@ -2,9 +2,13 @@
     font-family: 'Montserrat','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
+body{
+     overflow: hidden;
+}
+
 .container{
-    height: 948px;
-    width: 1680px;
+    height:100vh;
+    width: auto;
     background-color: #FAF9F9;
 }
 
@@ -15,6 +19,11 @@
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+.stripe{
+    height: 98px;
+    width: auto;
 }
 
 .iconos{
@@ -29,10 +38,12 @@ p{
 
 h2{
   font-weight: normal;
-  font-size: 40px;
+  font-size: 36px;
   justify-content: center;
   margin-block-start: 0em;
   margin-block-end: 0em;
+  margin-top: 14px;
+  margin-bottom: 18px;
 }
 
 .welcome{
@@ -56,9 +67,10 @@ h2{
     width: 180px;
     border: none;
     transition: all 0.5s;
-    background-color: #FFD6BA;
+    background-color: #BEE3DB;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 40px;
    }
 
 .button2{
@@ -67,10 +79,20 @@ h2{
     width: 180px;
     border: none;
     transition: all 0.5s;
-    background-color: #BEE3DB;
+    background-color: #FFD6BA;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 40px;
     }
+
+.button3{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 40px;
+    border-bottom: solid;
+}
 
 .centrar_contenido{
     text-align: center;
@@ -96,8 +118,23 @@ h2{
     height: 40px;
     background-color: #C4C4C432;
     border-color: transparent;
+    margin-top: 10px;
 }
 
+#primeraPagina{
+    display: block;
+    height: auto;
+}
+
+#segundaPagina{
+    display: none;
+    height: auto;
+}
+
+#terceraPagina{
+    display: none;
+    height: auto;
+}
 #contenedorTarjeta{
 
 }
