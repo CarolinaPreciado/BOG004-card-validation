@@ -49,18 +49,21 @@ buttonTc.addEventListener("click", () => {
 
 //Validar otra Tc de la misma empresa
 document.getElementById("buttonValidateNew").addEventListener("click", ()=>{
-    document.getElementById("segundaPagina").style.display = "none";
-    document.getElementById("terceraPagina").style.display = "block";
+    document.getElementById("segundaPagina").style.display = "block";
+    document.getElementById("terceraPagina").style.display = "none";
 //aca debemos agregar como devolvernos a borrar los valores del input y los resultados reinicializarlos
+numberTc.value ="";
 }
 );
 
 //Reinicio de la App
 document.getElementById("buttonInicio").addEventListener("click", ()=>{
-    document.getElementById("primeraPagina").style.display = "block";
+   document.getElementById("primeraPagina").style.display = "block";
     document.getElementById("segundaPagina").style.display = "none";
     document.getElementById("terceraPagina").style.display = "none";
     document.getElementById("containerCompany").style.display = "none";
     //aca debemos agregar como eliminar el resultado de empresa y que no se muestre?
+    company.value ="";
+    numberTc.value ="";
 }
 );
