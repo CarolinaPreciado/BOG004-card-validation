@@ -1,7 +1,6 @@
 import validator from './validator.js';
 
 //Declarando variables para enmascarar
-let creditCardNumber = document.getElementById("numberTc");
 let buttonTc = document.getElementById("buttonTc");
 let contenedorTarjeta = document.getElementById("contenedorTarjeta");
 
@@ -18,7 +17,7 @@ companyButton.addEventListener("click", () => {
 );
 
 //Función que evalua si el input del usuario es un numero de 16 caracteres. Informa al usuario qué debe hacer.
-function evaluaNumero(numberTc) {
+/*function evaluaNumero(numberTc) {
     let evaluateNumber = isNan(numberTc.value);
     if (evaluateNumber == "false") {
         console.log(`Usted ingreso un número de tarjeta de crédito apto para validar. De Click en Validar.`);
@@ -32,6 +31,7 @@ function evaluaNumero(numberTc) {
         console.log(`Usted ingreso ${numberTc.length} números, se puede realizar el proceso de validación. De Click en Validar.`);
     }
 }
+*/
 
 //Evento de emascaramiento, toma la variable del numero de tarjeta en el click y enmascara los primeros digitos
 buttonTc.addEventListener("click", () => {
@@ -60,6 +60,7 @@ document.getElementById("buttonInicio").addEventListener("click", ()=>{
     document.getElementById("primeraPagina").style.display = "block";
     document.getElementById("segundaPagina").style.display = "none";
     document.getElementById("terceraPagina").style.display = "none";
-    //como eliminar el resultado de empresa y que no se muestre
+    document.getElementById("containerCompany").style.display = "none";
+    //aca debemos agregar como eliminar el resultado de empresa y que no se muestre?
 }
 );
