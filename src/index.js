@@ -37,11 +37,19 @@ companyButton.addEventListener("click", () => {
 buttonTc.addEventListener("click", () => {
     let resultado = validator.maskify(numberTc.value);
     let isValid = validator.isValid(numberTc.value);
+    let valida = true;
+//   let icon-valid = new Image();
+//   Image.src = 'iconos/check.png/';
     let textoValidacion = isValid ? "La tarjeta es Valida" : "La tarjeta es Invalida";
-
     contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
     contenedorEvaluarTarjeta.innerText = textoValidacion;
+//    iconoValidar.
     console.log("resultado", resultado);
+    if (isValid == valida){
+        document.getElementById("contenedorEvaluarTarjeta").style.color="#89B0AE";
+    }else{
+        document.getElementById("contenedorEvaluarTarjeta").style.color="#F35B5B";
+    }
         document.getElementById("segundaPagina").style.display = "none";
         document.getElementById("terceraPagina").style.display = "block";
 }
@@ -73,3 +81,6 @@ document.getElementById("borrar").addEventListener("click", ()=>{
      numberTc.value ="";
 }
 );
+
+
+
