@@ -67,3 +67,9 @@ document.getElementById("buttonInicio").addEventListener("click", ()=>{
     numberTc.value ="";
 }
 );
+
+//Borrar los elementos
+document.getElementById("borrar").addEventListener("click", ()=>{
+     numberTc.value ="";
+}
+);
