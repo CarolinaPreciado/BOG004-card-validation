@@ -11,8 +11,10 @@ const containerCompany = document.getElementById("containerCompany");
 
 companyButton.addEventListener("click", () => {
     containerCompany.innerText = "Empresa: " + company.value;
+    console.log(company.value);
     document.getElementById("primeraPagina").style.display = "none";
     document.getElementById("segundaPagina").style.display = "block";
+    document.getElementById("containerCompany").style.display = "block";
 }
 );
 
@@ -51,7 +53,9 @@ buttonTc.addEventListener("click", () => {
         document.getElementById("contenedorEvaluarTarjeta").style.color="#F35B5B";
     }
         document.getElementById("segundaPagina").style.display = "none";
+        document.getElementById("containerCompany").style.display = "block";
         document.getElementById("terceraPagina").style.display = "block";
+
 }
 );
 
@@ -69,10 +73,9 @@ document.getElementById("buttonInicio").addEventListener("click", ()=>{
    document.getElementById("primeraPagina").style.display = "block";
     document.getElementById("segundaPagina").style.display = "none";
     document.getElementById("terceraPagina").style.display = "none";
-    document.getElementById("containerCompany").style.display = "none";
-    //aca debemos agregar como eliminar el resultado de empresa y que no se muestre?
-    company.value ="";
+    empresaName.value ="";
     numberTc.value ="";
+    document.getElementById("containerCompany").style.display = "none"; 
 }
 );
 
