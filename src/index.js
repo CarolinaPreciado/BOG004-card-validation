@@ -34,15 +34,13 @@ buttonTc.addEventListener("click", () => {
   let textoValidacion = isValid
     ? "La tarjeta es Valida"
     : "La tarjeta es Invalida";
- let urlIcon = isValid
-    ? "iconos/check.png"
-    : "iconos/block.png";
+  let urlIcon = isValid ? "iconos/check.png" : "iconos/block.png";
   contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
   let contenedorEvaluarTarjeta = document.getElementById(
     "contenedorEvaluarTarjeta"
   );
   contenedorEvaluarTarjeta.innerText = textoValidacion;
-  document.getElementById("iconValido").setAttribute("src",urlIcon);
+  document.getElementById("iconValido").setAttribute("src", urlIcon);
   //    iconoValidar.
   //console.log("resultado", resultado);
   if (isValid == valida) {

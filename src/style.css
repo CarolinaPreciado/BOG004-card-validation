@@ -69,6 +69,10 @@ h2 {
   margin-top: 40px;
 }
 
+.button1:hover {
+  background-color: #89b0ae;
+}
+
 .button2 {
   border-radius: 40px;
   padding: 10px;
