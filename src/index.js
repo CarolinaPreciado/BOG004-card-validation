@@ -3,6 +3,7 @@ import validator from "./validator.js";
 //Declarando variables para enmascarar
 let buttonTc = document.getElementById("buttonTc");
 let contenedorTarjeta = document.getElementById("contenedorTarjeta");
+let numberTc = document.getElementById("numberTc");
 
 //Declaracion de variables para crear evento de boton empresa
 const companyButton = document.getElementById("buttonE");
@@ -11,7 +12,7 @@ const containerCompany = document.getElementById("containerCompany");
 
 companyButton.addEventListener("click", () => {
   containerCompany.innerText = "Empresa: " + company.value;
-  console.log(company.value);
+  //console.log(company.value);
   document.getElementById("primeraPagina").style.display = "none";
   document.getElementById("segundaPagina").style.display = "block";
   document.getElementById("containerCompany").style.display = "block";
@@ -19,6 +20,7 @@ companyButton.addEventListener("click", () => {
 
 //Evento de emascaramiento, toma la variable del numero de tarjeta en el click y enmascara los primeros digitos
 buttonTc.addEventListener("click", () => {
+  let condicion = document.getElementById("condicion");
   if (numberTc.value === "") {
     return (condicion.innerHTML = "Por favor ingresar datos");
   } else {
@@ -33,9 +35,13 @@ buttonTc.addEventListener("click", () => {
     ? "La tarjeta es Valida"
     : "La tarjeta es Invalida";
   contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
+  let contenedorEvaluarTarjeta = document.getElementById(
+    "contenedorEvaluarTarjeta"
+  );
   contenedorEvaluarTarjeta.innerText = textoValidacion;
   //    iconoValidar.
-  console.log("resultado", resultado);
+  //console.log("resultado", resultado);
+
   if (isValid == valida) {
     document.getElementById("contenedorEvaluarTarjeta").style.color = "#89B0AE";
   } else {
@@ -59,7 +65,7 @@ document.getElementById("buttonInicio").addEventListener("click", () => {
   document.getElementById("primeraPagina").style.display = "block";
   document.getElementById("segundaPagina").style.display = "none";
   document.getElementById("terceraPagina").style.display = "none";
-  empresaName.value = "";
+  company.value = "";
   numberTc.value = "";
   document.getElementById("containerCompany").style.display = "none";
   document.getElementById("condicion").style.display = "block";
