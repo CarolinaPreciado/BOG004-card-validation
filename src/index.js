@@ -1,4 +1,4 @@
-import validator from './validator.js';
+import validator from "./validator.js";
 
 //Declarando variables para enmascarar
 let buttonTc = document.getElementById("buttonTc");
@@ -10,80 +10,62 @@ const company = document.getElementById("empresaName");
 const containerCompany = document.getElementById("containerCompany");
 
 companyButton.addEventListener("click", () => {
-    containerCompany.innerText = "Empresa: " + company.value;
-    console.log(company.value);
-    document.getElementById("primeraPagina").style.display = "none";
-    document.getElementById("segundaPagina").style.display = "block";
-    document.getElementById("containerCompany").style.display = "block";
-}
-);
-
-//Función que evalua si el input del usuario es un numero de 16 caracteres. Informa al usuario qué debe hacer.
-/*function evaluaNumero(numberTc) {
-    let evaluateNumber = isNan(numberTc.value);
-    if (evaluateNumber == "false") {
-        console.log(`Usted ingreso un número de tarjeta de crédito apto para validar. De Click en Validar.`);
-    }
-    else if (!numberTc) {
-        console.warn("No ingresaste ninguna información");
-    } else if (numberTc.length != 16) {
-        console.warn(`Usted ingreso ${numberTc.length} números, no se puede realizar la validación. Click en borrar.`);
-    }
-    else {
-        console.log(`Usted ingreso ${numberTc.length} números, se puede realizar el proceso de validación. De Click en Validar.`);
-    }
-}
-*/
+  containerCompany.innerText = "Empresa: " + company.value;
+  console.log(company.value);
+  document.getElementById("primeraPagina").style.display = "none";
+  document.getElementById("segundaPagina").style.display = "block";
+  document.getElementById("containerCompany").style.display = "block";
+});
 
 //Evento de emascaramiento, toma la variable del numero de tarjeta en el click y enmascara los primeros digitos
 buttonTc.addEventListener("click", () => {
-    let resultado = validator.maskify(numberTc.value);
-    let isValid = validator.isValid(numberTc.value);
-    let valida = true;
-//   let icon-valid = new Image();
-//   Image.src = 'iconos/check.png/';
-    let textoValidacion = isValid ? "La tarjeta es Valida" : "La tarjeta es Invalida";
-    contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
-    contenedorEvaluarTarjeta.innerText = textoValidacion;
-//    iconoValidar.
-    console.log("resultado", resultado);
-    if (isValid == valida){
-        document.getElementById("contenedorEvaluarTarjeta").style.color="#89B0AE";
-    }else{
-        document.getElementById("contenedorEvaluarTarjeta").style.color="#F35B5B";
-    }
-        document.getElementById("segundaPagina").style.display = "none";
-        document.getElementById("containerCompany").style.display = "block";
-        document.getElementById("terceraPagina").style.display = "block";
-
-}
-);
+  if (numberTc.value === "") {
+    return (condicion.innerHTML = "Por favor ingresar datos");
+  } else {
+    condicion.innerHTML = "";
+  }
+  let resultado = validator.maskify(numberTc.value);
+  let isValid = validator.isValid(numberTc.value);
+  let valida = true;
+  //   let icon-valid = new Image();
+  //   Image.src = 'iconos/check.png/';
+  let textoValidacion = isValid
+    ? "La tarjeta es Valida"
+    : "La tarjeta es Invalida";
+  contenedorTarjeta.innerText = "La tarjeta a validar es " + resultado;
+  contenedorEvaluarTarjeta.innerText = textoValidacion;
+  //    iconoValidar.
+  console.log("resultado", resultado);
+  if (isValid == valida) {
+    document.getElementById("contenedorEvaluarTarjeta").style.color = "#89B0AE";
+  } else {
+    document.getElementById("contenedorEvaluarTarjeta").style.color = "#F35B5B";
+  }
+  document.getElementById("segundaPagina").style.display = "none";
+  document.getElementById("containerCompany").style.display = "block";
+  document.getElementById("terceraPagina").style.display = "block";
+});
 
 //Validar otra Tc de la misma empresa
-document.getElementById("buttonValidateNew").addEventListener("click", ()=>{
-    document.getElementById("segundaPagina").style.display = "block";
-    document.getElementById("terceraPagina").style.display = "none";
-//aca debemos agregar como devolvernos a borrar los valores del input y los resultados reinicializarlos
-numberTc.value ="";
-}
-);
+document.getElementById("buttonValidateNew").addEventListener("click", () => {
+  document.getElementById("segundaPagina").style.display = "block";
+  document.getElementById("terceraPagina").style.display = "none";
+  //aca debemos agregar como devolvernos a borrar los valores del input y los resultados reinicializarlos
+  numberTc.value = "";
+});
 
 //Reinicio de la App
-document.getElementById("buttonInicio").addEventListener("click", ()=>{
-   document.getElementById("primeraPagina").style.display = "block";
-    document.getElementById("segundaPagina").style.display = "none";
-    document.getElementById("terceraPagina").style.display = "none";
-    empresaName.value ="";
-    numberTc.value ="";
-    document.getElementById("containerCompany").style.display = "none"; 
-}
-);
+document.getElementById("buttonInicio").addEventListener("click", () => {
+  document.getElementById("primeraPagina").style.display = "block";
+  document.getElementById("segundaPagina").style.display = "none";
+  document.getElementById("terceraPagina").style.display = "none";
+  empresaName.value = "";
+  numberTc.value = "";
+  document.getElementById("containerCompany").style.display = "none";
+  document.getElementById("condicion").style.display = "block";
+});
 
 //Borrar los elementos
-document.getElementById("borrar").addEventListener("click", ()=>{
-     numberTc.value ="";
-}
-);
-
-
-
+document.getElementById("borrar").addEventListener("click", () => {
+  numberTc.value = "";
+});
