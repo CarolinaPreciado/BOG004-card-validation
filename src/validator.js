@@ -2,7 +2,15 @@ const validator = {
   //Funcion para enmascarar tarjeta
 
   maskify: function (valorDeVariable) {
-    let lastFourDigits =
+    let lastFourDigits = valorDeVariable.slice(-4);
+    let maskedNumbers = valorDeVariable.slice(0, valorDeVariable.length - 4);
+    let mascaraFinal = Array.from(maskedNumbers);
+    for (let i = 0; i < mascaraFinal.length; i++) {
+      mascaraFinal[i].replace("#");
+    }
+    console.log(mascaraFinal);
+  },
+  /* let lastFourDigits =
       valorDeVariable[12] +
       valorDeVariable[13] +
       valorDeVariable[14] +
@@ -12,6 +20,7 @@ const validator = {
     console.log(finalMasking);
     return finalMasking;
   },
+*/
 
   //Funcion para validar tarjeta
 
@@ -20,7 +29,7 @@ const validator = {
     let validateCard = Array.from(numberTc).reverse();
     let suma = 0;
     for (let i = 0; i < validateCard.length; i++) {
-      if ((i+1) % 2 === 0) {
+      if ((i + 1) % 2 === 0) {
         validateCard[i] = validateCard[i] * 2;
         if (validateCard[i] >= 10) {
           validateCard[i] = validateCard[i] - 9;

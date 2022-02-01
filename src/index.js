@@ -29,8 +29,7 @@ buttonTc.addEventListener("click", () => {
   let resultado = validator.maskify(numberTc.value);
   let isValid = validator.isValid(numberTc.value);
   let valida = true;
-  //   let icon-valid = new Image();
-  //   Image.src = 'iconos/check.png/';
+
   let textoValidacion = isValid
     ? "La tarjeta es Valida"
     : "La tarjeta es Invalida";
