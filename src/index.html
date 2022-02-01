@@ -41,7 +41,7 @@
         <p>Ingrese el numero de tarjeta de credito a validar:</p>
         <label for="creditCard" class="labels"> Tarjeta de Crédito</label><br>
         <img class="iconos" src="iconos/debit-card.png" />
-        <input type="number" id="numberTc" class="inputGris" name="creditCard" min="1" max="16"
+        <input id="numberTc" class="inputGris" name="creditCard" min="1" max="16"
           placeholder="Numero de tarjeta de credito" pattern="^[0-9]+">
         <p id="condicion" style="color: #F35B5B"></p>
       </div>
@@ -68,7 +68,7 @@
       <div class="centrar_contenido">
         <label for="resultadoValidator" class="labels">Resultado</label><br>
         <div id="iconoValidar"></div>
-        <p class="avisos" id="contenedorEvaluarTarjeta"></p>
+        <img id="iconValido" src="iconos/check.png"><p class="avisos" id="contenedorEvaluarTarjeta"></p>
       </div>
 
       <div class="centrar_contenido">

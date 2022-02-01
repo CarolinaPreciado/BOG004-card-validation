@@ -17,10 +17,10 @@ const validator = {
 
   isValid: function (numberTc) {
     let valid = false;
-    let validateCard = Array.from(numberTc);
+    let validateCard = Array.from(numberTc).reverse();
     let suma = 0;
     for (let i = 0; i < validateCard.length; i++) {
-      if (i % 2 === 0) {
+      if ((i+1) % 2 === 0) {
         validateCard[i] = validateCard[i] * 2;
         if (validateCard[i] >= 10) {
           validateCard[i] = validateCard[i] - 9;
