@@ -2,12 +2,16 @@ const validator = {
   //Funcion para enmascarar tarjeta
 
   maskify: function (valorDeVariable) {
+    if (valorDeVariable.length < 4){
+      return valorDeVariable;
+    } else{
     let lastFourDigits = valorDeVariable.slice(-4);
     //let maskedNumbers = valorDeVariable.slice(0, valorDeVariable.length - 4);
     //console.log(maskedNumbers);
     let maskSymbol ="#";
     let maskedFinal = maskSymbol.repeat(valorDeVariable.length - 4)+ lastFourDigits;
     return maskedFinal;
+  }
   },
     //let mascaraFinal = Array.from(maskedNumbers);
     /*for (let i = 0; i < mascaraFinal.length; i++) {
