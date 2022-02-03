@@ -26,9 +26,9 @@ Pasos pensados inicialmente para estructurar la maquetación del proyecto:
 
 ## Prototipos: 
 
-1) ![Propuesta de maquetación Paola] https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Pao.jpg
+1) ![Propuesta de maquetación Paola] (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Pao.jpg)
 
-2)	![Propuesta de maquetación Carolina] https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Caro.jpg
+2)	![Propuesta de maquetación Carolina] (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Caro.jpg)
 
 
 ## Pasos definidos luego de ambos prototipos:
@@ -44,4 +44,6 @@ Pasos pensados inicialmente para estructurar la maquetación del proyecto:
 
 ## Prototipo final: 
 
+[Primerapantalla] (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/1.png)
 
+[Segundapantalla]
