@@ -24,46 +24,15 @@ Pasos pensados inicialmente para estructurar la maquetación del proyecto:
 - Dar respuesta si es válida o no 
 - validar de nuevo o validar otra tarjeta
 
-![Propuesta de maquetación Paola]https://raw.githubusercontent.com/CarolinaPreciado
-/BOG004-card-validation/originmain/
+## Prototipos: 
+
+1) ![Propuesta de maquetación Paola] https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Pao.jpg
+
+2)	![Propuesta de maquetación Carolina] https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Caro.jpg
 
 
+## Pasos definidos luego de ambos prototipos:
 
-
-
-
-
-
-
-Prototipos: 
-1)	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2)	
-
-
-
-
-
-
-
-
-Pasos definidos luego de ambos prototipos:
 -	Título de la app
 -	Bienvenida al usuario 
 -	Empresa
@@ -72,3 +41,7 @@ Pasos definidos luego de ambos prototipos:
 -	Dar respuesta si es válida o no 
 -	validar de nuevo o validar otra tarjeta
 -	Volver al inicio 
+
+## Prototipo final: 
+
+
