@@ -64,8 +64,19 @@ Inicialmente cuando empezamos a trabajar en el validator.js tuvimos una confusi�
 
 - Primera función para maskify (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/funcion%20enmascarar.JPG)
 
-
 Como inicialmente no tomamos en cuenta los test y nos preocupamos por hacer que las funciones funcionaran al correrlos al final nos dimos cuenta que debiamos cumplir ciertas condiciones que no tuvimos en cuenta y nos toco modificar de nuevo las funciones isValidy y maskify hasta que pasaron al 100% las pruebas.
+
+## Funcionalidades
+
+- Ingreso de empresa al sistema
+- Evaluación de ingreso de un valor input (En caso de no tener valor revelar un aviso en rojo)
+- Borrar datos de numero de tarjeta de crédito
+- Enmascaramiento de numero de tarjeta de crédito
+- Validación con el logaritmo de Luhn de la tarjeta de crédito
+- Evaluar otra tarjeta de crédito de la misma empresa
+- Reinicio de la aplicación con posibilidad de iniciar con otra empresa
+
+## Flujo de pantallas App Credit Card Validation online
 
 
 
