@@ -76,8 +76,16 @@ Como inicialmente no tomamos en cuenta los test y nos preocupamos por hacer que 
 - Evaluar otra tarjeta de crédito de la misma empresa
 - Reinicio de la aplicación con posibilidad de iniciar con otra empresa
 
-## Flujo de pantallas App Credit Card Validation online
+## Flujo de pantallas App Card Validator online
 
+[Ingreso App]  (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.08%20p.%C2%A0m..png)
+[Ingreso empresa]  (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.21%20p.%C2%A0m..png)
+[No hay datos de TC]  (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.54%20p.%C2%A0m..png)
+[Ingresar input TC] (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.34%20p.%C2%A0m..png)
+[TC invalida]  (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.26.09%20p.%C2%A0m..png)
+[TC valida]  (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.27.03%20p.%C2%A0m..png)
+[Reinicio nueva empresa]  (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.38.57%20p.%C2%A0m..png)
+[Evaluar otro numero de TC]  (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.27.30%20p.%C2%A0m..png)
 
 
 
