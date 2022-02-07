@@ -26,9 +26,9 @@ Pasos pensados inicialmente para estructurar la maquetación del proyecto:
 
 ## Prototipos: 
 
-1) ![Propuesta de maquetación Paola] (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Pao.jpg)
+1) ![Propuesta de maquetación Paola](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Pao.jpg)
 
-2)	![Propuesta de maquetación Carolina] (https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Caro.jpg)
+2)	![Propuesta de maquetación Carolina](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Caro.jpg)
 
 
 ## Pasos definidos luego de ambos prototipos:
@@ -44,13 +44,13 @@ Pasos pensados inicialmente para estructurar la maquetación del proyecto:
 
 ## Prototipo final: 
 
-[Primera pantalla](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/1.png)
+![Primera pantalla](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/1.png)
 
-[Segunda pantalla](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/2.png)
+![Segunda pantalla](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/2.png)
 
-[Tercera pantalla versión 1](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/3.png)
+![Tercera pantalla versión 1](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/3.png)
 
-[Tercera pantalla versión 2](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/4.png)
+![Tercera pantalla versión 2](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/4.png)
 
 
 Creamos la app para ayudar a las empresas a validar las tarjetas antes de generar los cobros en las tarjetas de los clientes, por ejemplo cuando un usuario se inscribe ingresa su tarjeta de credito pero no se le hace ningún cobro inicial y cuando se va a realizar el cobro la tarjeta no pasa entonces la empresa quiere rectificar de todas esas tarjetas de credito que estan su base de datos, cuales son validas y cuales no. 
@@ -78,14 +78,14 @@ Como inicialmente no tomamos en cuenta los test y nos preocupamos por hacer que 
 
 ## Flujo de pantallas App Card Validator online
 
-[Ingreso App](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.08%20p.%C2%A0m..png)
-[Ingreso empresa](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.21%20p.%C2%A0m..png)
-[No hay datos de TC](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.54%20p.%C2%A0m..png)
-[Ingresar input TC](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.34%20p.%C2%A0m..png)
-[TC invalida](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.26.09%20p.%C2%A0m..png)
-[TC valida](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.27.03%20p.%C2%A0m..png)
-[Reinicio nueva empresa](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.38.57%20p.%C2%A0m..png)
-[Evaluar otro numero de TC](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.27.30%20p.%C2%A0m..png)
+![Ingreso App](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.08%20p.%C2%A0m..png)
+![Ingreso empresa](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.21%20p.%C2%A0m..png)
+![No hay datos de TC](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.54%20p.%C2%A0m..png)
+![Ingresar input TC](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.25.34%20p.%C2%A0m..png)
+![TC invalida](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.26.09%20p.%C2%A0m..png)
+![TC valida](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.27.03%20p.%C2%A0m..png)
+![Reinicio nueva empresa](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.38.57%20p.%C2%A0m..png)
+![Evaluar otro numero de TC](https://github.com/CarolinaPreciado/BOG004-card-validation/blob/main/src/img/Captura%20de%20Pantalla%202022-02-05%20a%20la(s)%2012.27.30%20p.%C2%A0m..png)
 
 
 
